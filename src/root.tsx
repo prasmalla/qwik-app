@@ -1,12 +1,37 @@
-import { component$ } from "@builder.io/qwik";
+import { component$ } from '@builder.io/qwik';
 import {
   QwikCityProvider,
   RouterOutlet,
   ServiceWorkerRegister,
-} from "@builder.io/qwik-city";
-import { RouterHead } from "./components/router-head/router-head";
+} from '@builder.io/qwik-city';
+import { RouterHead } from './components/router-head/router-head';
 
-import "./global.css";
+import './global.css';
+
+// import { configureChains, createConfig, mainnet } from '@wagmi/core';
+// import { publicProvider } from '@wagmi/core/providers/public';
+// import { createPublicClient, createWalletClient, http } from 'viem';
+
+// const { chains, publicClient, webSocketPublicClient } = configureChains(
+//   [mainnet],
+//   [publicProvider()]
+// );
+
+// const config = createConfig({
+//   autoConnect: true,
+//   publicClient,
+//   webSocketPublicClient,
+// });
+
+// export const client = createPublicClient({
+//   chain: mainnet,
+//   transport: http(),
+// });
+
+// export const walletClient = createWalletClient({
+//   chain: mainnet,
+//   transport: http(),
+// });
 
 export default component$(() => {
   /**
